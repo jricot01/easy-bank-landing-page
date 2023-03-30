@@ -13,6 +13,11 @@ module.exports = {
         "light-grayish-blue": "#F3F4F6",
         "light-gray": "#FAFAFA",
       },
+
+      screens: {
+        sm: "426px",
+        // => @media (min-width: 640px) { ... }
+      },
     },
   },
   plugins: [],

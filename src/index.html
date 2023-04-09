@@ -3,6 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Primary Colors
+              "dark-blue": "#3E436A",
+              "lime-green": "#31D35C",
+              "bright-cyan": "#2BB7DA",
+              // Neutral Colors
+              "grayish-blue": "#9698A6",
+              "light-grayish-blue": "#F3F4F6",
+              "light-gray": "#FAFAFA",
+            },
+
+            screens: {
+              sm: "426px",
+              // => @media (min-width: 640px) { ... }
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="input.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
